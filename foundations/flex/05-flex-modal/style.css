@@ -12,14 +12,26 @@ body {
   /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .modal {
   background: white;
+  box-sizing: border-box; 
+  display: flex; 
+  flex-flow: row nowrap; 
+  gap: 15px; 
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 15px; 
+}
+
+.header {
+  display: flex; 
+  justify-content: space-between;  
+  font-size: 20px; 
+  font-weight: 700; 
 }
 
 .icon {
@@ -33,6 +45,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: none; 
 }
 
 .close-button {
@@ -50,8 +63,14 @@ body {
   padding: 0;
 }
 
+.text-and-buttons {
+  display: flex; 
+  flex-flow: column wrap; 
+  gap: 10px; 
+}
+
 button {
-  cursor: pointer;
+  cursor: pointer; 
   padding: 8px 16px;
   border-radius: 8px;
 }
